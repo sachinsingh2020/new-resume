@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import IntroSection from './components/IntroSection'
+import { Box, HStack, VStack } from '@chakra-ui/react'
+import Objective from './components/Objective'
+import KeySkills from './components/KeySkills'
+import TechnicalSkills from './components/TechnicalSkills'
+import Certifications from './components/Certifications'
+import AdditionalInfo from './components/AdditionalInfo'
+import Education from './components/Education'
+import KeyProjects from './components/KeyProjects'
+import Experience from './components/Experience'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ background: "#eff1f3", height: "100vh", width: "100vw" }}>
+      <div style={{ margin: "1rem auto", width: "95%", background: "white", fontFamily: "'Poppins',sans-serif" }}>
+        <Box >
+          <IntroSection />
+        </Box>
+        <HStack alignItems={"flex-start"} mt={'.5rem'} >
+          <VStack w={'30rem'}  >
+            <Objective />
+            <KeySkills />
+            <TechnicalSkills />
+            <Certifications />
+            <AdditionalInfo />
+          </VStack>
+          <VStack w={'70rem'} minH={'61.5rem'}>
+            <Education />
+            <Experience />
+            <KeyProjects />
+          </VStack>
+        </HStack>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
