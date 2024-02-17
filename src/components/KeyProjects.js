@@ -68,7 +68,7 @@ const KeyProjects = () => {
             </Box>
             <HStack justifyContent={'space-between'} pt={'.5rem'}  >
                 <Heading pl={'.5rem'} color={"#444654"} fontSize={'16px'}>
-                    GBU Job Portal | React.js | Node.js | REST API</Heading>
+                    Job Apply Portal | React.js | Node.js | REST API</Heading>
                 <a style={{ fontWeight: "bold", display: "flex", alignItems: "center", paddingRight: ".7rem", fontSize: "15px", paddingLeft: "8rem" }} href=" https://github.com/sachinsingh2020/gbu-job-portal-frontend" target='_blank' rel="noreferrer">
                     GitHub Repo <span style={{ paddingLeft: ".5rem" }}><FaExternalLinkAlt /></span>
                 </a>

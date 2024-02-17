@@ -20,7 +20,7 @@ const Education = () => {
               Persuing B.Tech in Computer Science
             </li>
             <li style={{ fontSize: "14px" }}>
-              Scored 9.1 CGPA in Second Year
+              Scored 9.8 CGPA in Third Year
             </li>
           </ul>
         </Text>
